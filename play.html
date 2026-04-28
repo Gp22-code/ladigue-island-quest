@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Play | Ladigue Island Quest Seychelles</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="site-header">
+      <div class="brand">
+        <h1>Ladigue Island Quest Seychelles</h1>
+        <span class="tagline">Choose your path. Discover your ending.</span>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="play.html" aria-current="page">Play</a>
+        <a href="help.html">Help</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card" aria-label="Game area">
+        <p id="progress" class="muted">Progress: 0 scene(s) explored</p>
+
+        <h2 id="sceneTitle">Loading…</h2>
+        <p id="sceneText">Please wait while the story begins.</p>
+
+        <div id="choices" aria-label="Choices">
+          <!-- Buttons would normally be injected by JavaScript -->
+        </div>
+
+        <div class="actions" aria-label="Game controls">
+          <button id="restartBtn" class="btn" type="button">Restart</button>
+          <button id="homeBtn" class="btn" type="button">Home</button>
+
+          <label class="btn toggle-row" for="soundToggle" title="Toggle click sound effects">
+            <input id="soundToggle" type="checkbox" />
+            <span>Sound</span>
+          </label>
+        </div>
+
+        <div id="endingPanel" class="ending" hidden>
+          <h3 id="endingTitle">Ending</h3>
+          <p id="endingText" class="muted"></p>
+          <span class="badge">Try another path!</span>
+        </div>
+      </section>
+
+      <section class="card achievements" aria-label="Achievements">
+        <h2>Achievements</h2>
+        <p class="muted">Small rewards unlock when you make certain choices.</p>
+        <ul id="achievementsList">
+          <li class="muted">No achievements yet. Explore to unlock them.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="muted">
+        Tip: Replay to discover different endings. Your unlocked endings and achievements may be saved in your browser.
+      </p>
+    </footer>
+
+  </div>
+
+ <script src="game.js"></script>
+</body>
+</html>
